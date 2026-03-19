@@ -80,7 +80,7 @@ if (btnKirimBalik) {
   btnKirimBalik.addEventListener('click', () => {
     const phone = '6281238182279';
     const text =
-      'oke pastinya dimaafkan, dan مِنَ الْعَائِدِيْنَ وَالْفَائِزِيْنَ juga mohon maaf bila ada kesalahan';
+      'oke pastinya dimaafkan, dan مِنَ الْعَائِدِيْنَ وَالْفَائِزِيْنَ juga mohon maaf lahir batin';
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   });
