@@ -416,3 +416,70 @@
     border: 2px solid rgba(245,215,126,0.5);
     background: #fff;
   }
+
+  /* Admin user list page */
+  .admin-actions{
+    width: min(92vw, 560px);
+    display: flex;
+    justify-content: center;
+    margin: 4px 0 8px;
+  }
+  .btn-link{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 13px;
+    padding: 0.55rem 1rem;
+    background-color: #d4a017;
+    color: white;
+    transition: 0.25s;
+  }
+  .btn-link:hover{
+    transform: scale(1.06);
+  }
+  .user-list{
+    width: min(92vw, 560px);
+    max-height: min(62vh, 520px);
+    overflow: auto;
+    border: 2px solid rgba(245,215,126,0.35);
+    border-radius: 16px;
+    background: rgba(13, 59, 30, 0.7);
+    box-shadow: 0 16px 60px rgba(0,0,0,0.35);
+    padding: 10px;
+  }
+  .user-entry{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(212,160,23,0.18);
+    background: rgba(13, 59, 30, 0.55);
+    margin: 8px 0;
+  }
+  .user-entry__name{
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--gold-light);
+    letter-spacing: 0.06em;
+    font-size: 1rem;
+  }
+  .user-entry__time{
+    color: var(--cream);
+    opacity: 0.8;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+  .empty-state{
+    color: var(--cream);
+    opacity: 0.85;
+    text-align: center;
+    padding: 16px 10px;
+    letter-spacing: 0.04em;
+  }
+  .icon{
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  .me{
+    color: #8a6300;
+  }
