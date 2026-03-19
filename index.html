@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ketupat Ramadan</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Stars -->
+<div class="stars" id="stars"></div>
+
+<!-- Moon -->
+<div class="moon">
+  <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="moonGrad" cx="40%" cy="35%">
+        <stop offset="0%" stop-color="#fff9c4"/>
+        <stop offset="100%" stop-color="#d4a017"/>
+      </radialGradient>
+    </defs>
+    <circle cx="40" cy="40" r="30" fill="url(#moonGrad)"/>
+    <circle cx="55" cy="28" r="24" fill="#0d3b1e"/>
+  </svg>
+</div>
+
+<!-- Lanterns left -->
+<div class="lantern-wrap left">
+  <div class="lantern">
+    <div class="lantern-string"></div>
+    <div class="lantern-top"></div>
+    <div class="lantern-body"><div class="lantern-glow"></div></div>
+    <div class="lantern-bot"></div>
+    <div class="lantern-fringe">
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div>
+    </div>
+  </div>
+  <div class="lantern" style="margin-top:30px">
+    <div class="lantern-string"></div>
+    <div class="lantern-top"></div>
+    <div class="lantern-body"><div class="lantern-glow"></div></div>
+    <div class="lantern-bot"></div>
+    <div class="lantern-fringe">
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Lanterns right -->
+<div class="lantern-wrap right">
+  <div class="lantern" style="animation-delay:-0.8s">
+    <div class="lantern-string"></div>
+    <div class="lantern-top"></div>
+    <div class="lantern-body" style="background:radial-gradient(ellipse at 40% 35%, #33aaff99, #005599dd)">
+      <div class="lantern-glow"></div>
+    </div>
+    <div class="lantern-bot"></div>
+    <div class="lantern-fringe">
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div>
+    </div>
+  </div>
+  <div class="lantern" style="margin-top:20px;animation-delay:-2s">
+    <div class="lantern-string"></div>
+    <div class="lantern-top"></div>
+    <div class="lantern-body" style="background:radial-gradient(ellipse at 40% 35%, #aaff6699, #226600dd)">
+      <div class="lantern-glow"></div>
+    </div>
+    <div class="lantern-bot"></div>
+    <div class="lantern-fringe">
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div><div class="fringe-strand"></div>
+      <div class="fringe-strand"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Stage -->
+<div class="stage">
+
+  <form class="input-nama">
+    <input id="nama" type="text" name="nama" value="" placeholder="masukkan nama kamu">
+    <br>
+    <button id="confirm" name="confirm" type="submit">Oke</button>
+  </form>
+  <div id="welcomeText" class="welcome-text" aria-live="polite"></div>
+
+  <!-- Mini ketupats row -->
+  <div class="mini-row">
+    <div class="mini-ketupat">
+      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="dc1"><polygon points="30,4 56,30 30,56 4,30"/></clipPath>
+        </defs>
+        <polygon points="30,4 56,30 30,56 4,30" fill="#c8401a"/>
+        <g clip-path="url(#dc1)">
+          <g stroke="#8a2200" stroke-width="2" opacity="0.5">
+            <line x1="0" y1="15" x2="60" y2="15"/><line x1="0" y1="30" x2="60" y2="30"/><line x1="0" y1="45" x2="60" y2="45"/>
+            <line x1="15" y1="0" x2="15" y2="60"/><line x1="30" y1="0" x2="30" y2="60"/><line x1="45" y1="0" x2="45" y2="60"/>
+          </g>
+        </g>
+        <polygon points="30,4 56,30 30,56 4,30" fill="none" stroke="#f5d77e" stroke-width="2.5"/>
+        <circle cx="30" cy="30" r="6" fill="#f5d77e" opacity="0.9"/>
+        <circle cx="30" cy="30" r="3" fill="#d4a017"/>
+      </svg>
+    </div>
+    <div class="mini-ketupat">
+      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="dc2"><polygon points="30,4 56,30 30,56 4,30"/></clipPath>
+        </defs>
+        <polygon points="30,4 56,30 30,56 4,30" fill="#1a5c32"/>
+        <g clip-path="url(#dc2)">
+          <g stroke="#0d3b1e" stroke-width="2" opacity="0.5">
+            <line x1="0" y1="15" x2="60" y2="15"/><line x1="0" y1="30" x2="60" y2="30"/><line x1="0" y1="45" x2="60" y2="45"/>
+            <line x1="15" y1="0" x2="15" y2="60"/><line x1="30" y1="0" x2="30" y2="60"/><line x1="45" y1="0" x2="45" y2="60"/>
+          </g>
+        </g>
+        <polygon points="30,4 56,30 30,56 4,30" fill="none" stroke="#f5d77e" stroke-width="2.5"/>
+        <circle cx="30" cy="30" r="6" fill="#f5d77e" opacity="0.9"/>
+        <circle cx="30" cy="30" r="3" fill="#d4a017"/>
+      </svg>
+    </div>
+    <div class="mini-ketupat">
+      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="dc3"><polygon points="30,4 56,30 30,56 4,30"/></clipPath>
+        </defs>
+        <polygon points="30,4 56,30 30,56 4,30" fill="#7b3f00"/>
+        <g clip-path="url(#dc3)">
+          <g stroke="#4a2500" stroke-width="2" opacity="0.5">
+            <line x1="0" y1="15" x2="60" y2="15"/><line x1="0" y1="30" x2="60" y2="30"/><line x1="0" y1="45" x2="60" y2="45"/>
+            <line x1="15" y1="0" x2="15" y2="60"/><line x1="30" y1="0" x2="30" y2="60"/><line x1="45" y1="0" x2="45" y2="60"/>
+          </g>
+        </g>
+        <polygon points="30,4 56,30 30,56 4,30" fill="none" stroke="#f5d77e" stroke-width="2.5"/>
+        <circle cx="30" cy="30" r="6" fill="#f5d77e" opacity="0.9"/>
+        <circle cx="30" cy="30" r="3" fill="#d4a017"/>
+      </svg>
+    </div>
+  </div>
+
+</div>
+<script src="audio.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
