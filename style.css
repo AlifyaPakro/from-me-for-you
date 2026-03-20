@@ -422,3 +422,8 @@
 #welcomeText.is-visible {
   opacity: 1;
 }
+@media (width: 768px){
+  .subtitle{
+    font-size: 10px;
+  }
+}
