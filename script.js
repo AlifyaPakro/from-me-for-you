@@ -57,9 +57,9 @@ if (namaInput && confirmBtn) {
   localStorage.setItem('nama', nama);
 
   const messages = [
+    `Assalamualaikum`
     `Halo ${nama} 👋`,
-    `Bagaimana kabarmu?`,
-    `Saya harap kamu baik,baik saja`,
+    `Bagaimana kabarmu ${nama}?`,
     `😉👍`,
     `Saya ingin mengucapkan....`
   ];
@@ -100,7 +100,7 @@ if (btnKirimBalik) {
   btnKirimBalik.addEventListener('click', () => {
     const phone = '6281238182279';
     const text =
-      'oke pastinya dimaafkan, dan مِنَ الْعَائِدِيْنَ وَالْفَائِزِيْنَ juga mohon maaf lahir batin';
+      'oke, dan saya ucapkan مِنَ الْعَائِدِيْنَ وَالْفَائِزِيْنَ mohon maaf lahir batin';
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   });
