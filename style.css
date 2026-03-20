@@ -322,7 +322,6 @@
     padding: 0.5rem 1rem;
     background-color: #d4a017;
     color: white;
-    margin: 0 5px;
     transition: 0.7s;
   }
   .next button:hover{
@@ -330,7 +329,7 @@
   }
 
   .welcome-text{
-    margin-top: 10px;
+    margin-top: 3px;
     font-family: 'Cinzel Decorative', cursive;
     color: var(--gold-light);
     text-shadow: 0 0 18px #d4a01766;
@@ -416,3 +415,10 @@
     border: 2px solid rgba(245,215,126,0.5);
     background: #fff;
   }
+  #welcomeText {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#welcomeText.is-visible {
+  opacity: 1;
+}

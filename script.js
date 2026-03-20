@@ -48,21 +48,41 @@ const welcomeText = document.getElementById('welcomeText');
 if (namaInput && confirmBtn) {
   const form = confirmBtn.closest('form');
   const handleSubmit = (e) => {
-    if (e) e.preventDefault();
-    const nama = (namaInput.value || '').trim();
-    if (!nama) {
-      alert('Nama tidak boleh kosong!');
-      return;
+  if (e) e.preventDefault();
+  const nama = (namaInput.value || '').trim();
+  if (!nama) {
+    alert('Nama tidak boleh kosong!');
+    return;
+  }
+  localStorage.setItem('nama', nama);
+
+  const messages = [
+    `Halo ${nama} 👋`,
+    `Bagaimana kabarmu?`,
+    `Saya harap kamu baik,baik saja`,
+    `😉👍`,
+    `Saya ingin mengucapkan....`
+  ];
+
+  let i = 0;
+  const showNext = () => {
+    if (i < messages.length) {
+      if (welcomeText) {
+        welcomeText.textContent = messages[i];
+        welcomeText.classList.add('is-visible');
+      }
+      i++;
+      setTimeout(showNext, 3000); // jeda antar teks 1 detik
+    } else {
+      // semua teks sudah tampil, baru pindah halaman
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 500);
     }
-    localStorage.setItem('nama', nama);
-    if (welcomeText) {
-      welcomeText.textContent = `Selamat datang, ${nama}`;
-      welcomeText.classList.add('is-visible');
-    }
-    setTimeout(() => {
-      window.location.href = 'dashboard.html';
-    }, 900);
   };
+
+  showNext();
+};
 
   if (form) form.addEventListener('submit', handleSubmit);
   confirmBtn.addEventListener('click', handleSubmit);
