@@ -57,7 +57,7 @@ if (namaInput && confirmBtn) {
   localStorage.setItem('nama', nama);
 
   const messages = [
-    `Assalamualaikum`
+    `Assalamualaikum`,
     `Halo ${nama} 👋`,
     `Bagaimana kabarmu ${nama}?`,
     `😉👍`,
